@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { auth, goggleProvider } from "../config/firebase-config";
-import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 
 export default function Auth() {
   const [email, setEmail] = useState("");
@@ -31,7 +35,7 @@ export default function Auth() {
     } catch (err) {
       console.error(err);
     }
-  }
+  };
 
   return (
     <div>
